@@ -1,0 +1,23 @@
+.add_form {
+  padding: 0 12px 12px;
+  &-input {
+    textarea {
+      border: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      outline: none;
+      resize: none;
+      cursor: text;
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      cursor: pointer;
+      width: 28px;
+    }
+  }
+}

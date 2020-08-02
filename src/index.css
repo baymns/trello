@@ -1,0 +1,23 @@
+* {
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  outline: none
+}
+body, #root {
+  height: 100vh;
+}
+
+#root {
+  background-image: url(./assets/bgimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

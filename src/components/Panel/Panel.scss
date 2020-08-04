@@ -2,25 +2,33 @@
   background-color: #dfe3e6;
   border-radius: 3px;
   width: 278px;
-  &_list {
-    padding: 12px 12px 0;
+  margin-right: 8px;
+  &_empty {
+    .add_form {
+      margin-top: 12px;
+    }
   }
-  &_bottom {
-    .add_button {
-      padding: 12px;
-      color: #6b808c;
-      display: flex;
-      align-items: center;
+  &_title {
+    font-weight: bold;
+    padding: 12px 12px 0;
+    color: #1d3052;
+    display: flex;
+    justify-content: space-between;
+    span {
+      display: block;
+    }
+    img {
+      display: block;
+      width: 22px;
       &:hover {
-        background-color: darken(#dfe3e6, 10);
-        border-radius: 0 0 3px 3px;
         cursor: pointer;
-        color: darken($color: #6b808c, $amount: 40);
-      }
-      img {
-        margin-right: 8px;
-        width: 22px;
       }
     }
+  }
+  &_list {
+    padding: 0 12px 0;
+    margin-top: 12px;
+    max-height: 73vh;
+    overflow: auto;
   }
 }

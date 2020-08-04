@@ -1,5 +1,5 @@
 .add_form {
-  padding: 0 12px 12px;
+  padding: 12px;
   &-input {
     textarea {
       border: none;
@@ -15,9 +15,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img {
-      cursor: pointer;
-      width: 28px;
+    .add_button {
+      width: 100%;
+      padding: 12px;
+      color: #6b808c;
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: darken(#dfe3e6, 10);
+        border-radius: 0 0 3px 3px;
+        cursor: pointer;
+        color: darken($color: #6b808c, $amount: 40);
+      }
+      img {
+        display: block;
+        margin-right: 8px;
+        width: 22px;
+      }
     }
+  }
+  img {
+    cursor: pointer;
+    width: 28px;
   }
 }

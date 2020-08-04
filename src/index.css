@@ -4,12 +4,11 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
+  outline: none
 }
 body {
   margin: 0;
   padding: 0;
-  outline: none
 }
 body, #root {
   height: 100vh;
@@ -20,4 +19,8 @@ body, #root {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+button, textarea, span {
+  font-size: 14px;
 }

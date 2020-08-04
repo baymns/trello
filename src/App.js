@@ -1,12 +1,20 @@
 import React from 'react';
-import './App.css';
-import Card from './components/Card';
+import './App.scss';
 import Panel from './components/Panel';
+import { useSelector } from 'react-redux';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 
 function App() {
+  const { panels } = useSelector(state => state)
   return (
-    <div className="App">
-      <Panel items={[{id: 1, text: 'Подготовиться к prototype'}, {id: 2, text: 'Почитать статью про useEffect()'}, {id: 3, text: 'Выучить английский'}]}/>
+    <div className="app">
+      <DndProvider backend={HTML5Backend}>
+        {
+          panels && panels.map(panel => <Panel key={panel.id} {...panel} />)
+        }
+        <Panel />
+      </DndProvider>
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.app {
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  .create_panel {
+    background: rgba($color: #fff, $alpha: 0.4);
+    border-radius: 3px;
+    color: #000;
+  }
+}
+
+

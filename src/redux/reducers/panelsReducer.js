@@ -1,35 +1,6 @@
 import { ADD_PANEL, REMOVE_PANEL, ADD_CARD } from '../actions/actionTypes';
-const initialState = [
-  {
-    id: 0,
-    title: 'Test',
-    cards: [
-      {
-        id: 1,
-        text: 'Help me',
-      },
-      {
-        id: 2,
-        text: 'Please',
-      },
-      {
-        id: 3,
-        text: 'OMG',
-      },
-      {
-        id: 4,
-        text: 'Help me',
-      },
-      {
-        id: 5,
-        text: 'I\'m done',
-      },
-      
-     
-    ]
-  }
-]
-export const panelsReducer = (state = initialState, action) => {
+
+export const panelsReducer = (state = [], action) => {
   switch (action.type) {
     case ADD_PANEL:
       return [

@@ -1,16 +1,16 @@
 import React, { useImperativeHandle, useRef } from 'react';
-import { DragSource, DropTarget } from 'react-dnd'
+import { DragSource, DropTarget } from 'react-dnd';
 import './Card.scss'
 import { ItemTypes } from './ItemTypes';
 
 const Card = React.forwardRef(({ children, isDragging, connectDragSource, connectDropTarget }, ref) => {
-  const elementRef = useRef(null)
-  connectDragSource(elementRef)
-  connectDropTarget(elementRef)
-  const opacity = isDragging ? 0 : 1
+  const elementRef = useRef(null);
+  connectDragSource(elementRef);
+  connectDropTarget(elementRef);
+  const opacity = isDragging ? 0 : 1;
   useImperativeHandle(ref, () => ({
     getNode: () => elementRef.current,
-  }))
+  }));
   return (
     <div ref={elementRef} className="card" style={{ opacity }}>
       {children}

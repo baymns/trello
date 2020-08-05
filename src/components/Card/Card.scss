@@ -7,4 +7,7 @@
   margin-bottom: 8px;
   line-height: 19px;
   cursor: 'move';
+  &:hover {
+    cursor: pointer;
+  }
 }
